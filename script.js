@@ -53,3 +53,24 @@ return
 
 alert("Order placed! Tracking: Preparing Cake 🍰")
 }
+let products = JSON.parse(localStorage.getItem("products")) || []
+
+products.forEach(p=>{
+
+document.getElementById("products").innerHTML+=`
+
+<div class="card">
+
+<img src="${p.image}">
+
+<h3>${p.name}</h3>
+
+<p>₹${p.price}</p>
+
+<button>Add to Cart</button>
+
+</div>
+
+`
+
+})
