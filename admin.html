@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>RK Bakery Admin</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+
+<body>
+
+<h1>RK Bakery Admin Dashboard</h1>
+
+<h2>Add Cake</h2>
+
+<input id="cakeName" placeholder="Cake Name">
+
+<input id="cakePrice" placeholder="Price">
+
+<input type="file" id="cakeImage">
+
+<button onclick="addCake()">Upload Cake</button>
+
+<hr>
+
+<h2>Products</h2>
+
+<div id="productList"></div>
+
+<hr>
+
+<h2>Website Visitors</h2>
+
+<p id="visitors"></p>
+
+<hr>
+
+<h2>Bakery Location</h2>
+
+<div id="map" style="height:400px"></div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
