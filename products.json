@@ -1,0 +1,17 @@
+[
+{
+"name":"Chocolate Cake",
+"price":240,
+"image":"images/cake1.jpg"
+},
+{
+"name":"Strawberry Cake",
+"price":200,
+"image":"images/cake2.jpg"
+},
+{
+"name":"Black Forest",
+"price":200,
+"image":"images/cake3.jpg"
+}
+]
