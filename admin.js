@@ -76,3 +76,23 @@ visits++
 localStorage.setItem("visits",visits)
 
 document.getElementById("visitors").innerText = visits
+function initMap(){
+
+let bakery = {lat:26.9124, lng:75.7873}
+
+let map = new google.maps.Map(
+document.getElementById("map"),
+{
+zoom:13,
+center:bakery
+}
+)
+
+let marker = new google.maps.Marker({
+position:bakery,
+map:map,
+title:"RK Bakery"
+})
+
+}
+window.onload = initMap
