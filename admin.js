@@ -31,7 +31,14 @@ reader.readAsDataURL(image)
 }
 
 function displayProducts(){
+let circle = new google.maps.Circle({
 
+map:map,
+radius:10000,
+fillColor:"#ff4d6d",
+center:bakery
+
+})
 let list = document.getElementById("productList")
 
 list.innerHTML=""
