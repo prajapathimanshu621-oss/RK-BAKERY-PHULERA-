@@ -74,3 +74,18 @@ document.getElementById("products").innerHTML+=`
 `
 
 })
+function searchCake(){
+
+let input=document.getElementById("search").value.toLowerCase()
+
+let cakes=document.querySelectorAll(".card")
+
+cakes.forEach(cake=>{
+
+let name=cake.innerText.toLowerCase()
+
+cake.style.display=name.includes(input)?"block":"none"
+
+})
+
+}
