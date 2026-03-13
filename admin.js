@@ -69,3 +69,10 @@ displayProducts()
 }
 
 displayProducts()
+let visits = localStorage.getItem("visits") || 0
+
+visits++
+
+localStorage.setItem("visits",visits)
+
+document.getElementById("visitors").innerText = visits
