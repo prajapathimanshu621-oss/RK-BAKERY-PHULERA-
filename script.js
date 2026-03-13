@@ -89,3 +89,4 @@ cake.style.display=name.includes(input)?"block":"none"
 })
 
 }
+<input type="text" id="search" placeholder="Search cake" onkeyup="searchCake()">
